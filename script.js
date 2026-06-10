@@ -1,4 +1,4 @@
-﻿/* ===================================================
+/* ===================================================
    I18N TRANSLATIONS - English / Arabic
    =================================================== */
 const i18n = {
@@ -99,6 +99,7 @@ const i18n = {
   "cta-btn-whatsapp": { en: "WhatsApp", ar: "واتساب" },
   "cta-btn-instagram": { en: "Instagram", ar: "انستغرام" },
   "cta-btn-youtube": { en: "YouTube", ar: "يوتيوب" },
+  "cta-btn-github": { en: "GitHub", ar: "جيت هب" },
   "cta-meta": { en: "PGP Encryption Available &bull; Secure End-to-End &bull; Response within 24 Hours", ar: "تشفير PGP متاح &bull; آمن من البداية للنهاية &bull; رد سريع خلال 24 ساعة" },
   "footer-text": { en: "\u00a9 2026 Hadi Ahmed Abdulrahman &bull; Built with secure engineering principles", ar: "\u00a9 2026 هادي أحمد عبد الرحمن &bull; جميع الحقوق محفوظة ومحمية برمجياً بمبادئ هندسية آمنة." },
   "footer-github": { en: "GitHub", ar: "جيت هاب" },
