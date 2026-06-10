@@ -1,4 +1,4 @@
-﻿/* === ROOT === */
+/* === ROOT === */
 :root {
   --bg-deep: #05050f;
   --bg-navy: #0a0a1a;
@@ -500,6 +500,17 @@ body {
 .cta-btn-youtube:hover { transform: translateY(-3px); box-shadow: 0 0 50px rgba(255,0,0,0.5); }
 .cta-btn-youtube i { font-size: 1.4rem; }
 
+.cta-btn-github {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: linear-gradient(135deg, #333, #111);
+  color: #fff; padding: 16px 36px; border-radius: 8px;
+  font-family: var(--font-mono); font-size: 1rem; font-weight: 700;
+  text-decoration: none; transition: all 0.4s ease; border: none; cursor: pointer;
+  box-shadow: 0 0 25px rgba(255,255,255,0.08);
+}
+.cta-btn-github:hover { transform: translateY(-3px); box-shadow: 0 0 50px rgba(255,255,255,0.15); }
+.cta-btn-github i { font-size: 1.4rem; }
+
 .cta-meta { margin-top: 28px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); }
 
 /* === FOOTER === */
@@ -687,8 +698,8 @@ body.lang-ar .arsenal-item { font-family: var(--font-arabic-body); }
   .cta-title { font-size: 1.4rem; }
   .cta-subtitle { font-size: 0.85rem; margin-bottom: 24px; }
   .cta-actions { flex-direction: column; align-items: stretch; gap: 12px; }
-  .cta-btn-whatsapp, .cta-btn-instagram, .cta-btn-youtube { justify-content: center; padding: 14px 24px; font-size: 0.85rem; }
-  .cta-btn-whatsapp i, .cta-btn-instagram i, .cta-btn-youtube i { font-size: 1.1rem; }
+  .cta-btn-whatsapp, .cta-btn-instagram, .cta-btn-youtube, .cta-btn-github { justify-content: center; padding: 14px 24px; font-size: 0.85rem; }
+  .cta-btn-whatsapp i, .cta-btn-instagram i, .cta-btn-youtube i, .cta-btn-github i { font-size: 1.1rem; }
   .cta-meta { font-size: 0.68rem; margin-top: 20px; }
   .cta-badge { font-size: 0.7rem; }
 
@@ -702,7 +713,7 @@ body.lang-ar .arsenal-item { font-family: var(--font-arabic-body); }
   body.lang-ar .hero-name { font-size: 1.4rem; }
   body.lang-ar .hero-greeting { font-size: 1.2rem; }
   body.lang-ar .hero-title { font-family: var(--font-arabic-heading); }
-  body.lang-ar .btn, body.lang-ar .cta-btn-whatsapp, body.lang-ar .cta-btn-instagram, body.lang-ar .cta-btn-youtube { font-family: var(--font-arabic-body); }
+  body.lang-ar .btn, body.lang-ar .cta-btn-whatsapp, body.lang-ar .cta-btn-instagram, body.lang-ar .cta-btn-youtube, body.lang-ar .cta-btn-github { font-family: var(--font-arabic-body); }
 }
 
 /* Small phones: 376-576px */
