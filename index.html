@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hadi Ahmed Abdulrahman — Cybersecurity Student & Full-Stack Developer. Premium Kali Linux inspired portfolio.">
+  <title>Hadi Ahmed | Cyber Command Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&family=Almarai:wght@300;400;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo" data-i18n="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Hadi Ahmed</span>
+        <span class="logo-slash">/</span>
+        <span class="logo-bracket">&gt;</span>
+        <span class="logo-cursor">_</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#terminal" class="nav-link" data-i18n="nav-terminal">Terminal</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+        <li><a href="#stats" class="nav-link" data-i18n="nav-stats">Stats</a></li>
+        <li><a href="#arsenal" class="nav-link" data-i18n="nav-arsenal">Arsenal</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+        <li><a href="#trust" class="nav-link" data-i18n="nav-trust">Trust</a></li>
+        <li><a href="#contact" class="nav-link nav-contact-link" data-i18n="nav-contact">Contact</a></li>
+        <li><button class="lang-btn" id="langToggle" aria-label="Toggle language">AR</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="grid-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-profile">
+          <div class="profile-ring">
+            <div class="profile-ring-inner"></div>
+            <div class="profile-avatar">
+              <img src="my photo.png" alt="Hadi Ahmed" class="avatar-img" id="avatarImg">
+            </div>
+          </div>
+          <div class="radar-pulse"></div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="hero-badge">Cybersecurity Student & Developer</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-greeting" data-i18n="hero-greeting">Hi, I'm</span>
+          <span class="hero-name">Hadi Ahmed</span>
+        </h1>
+        <div class="hero-typewrap">
+          <span class="typewriter" id="typewriter"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+        <div class="hero-techs">
+          <span class="hero-tech-badge" data-i18n="hero-tech-1">Secure Systems</span>
+          <span class="hero-tech-sep">&bull;</span>
+          <span class="hero-tech-badge" data-i18n="hero-tech-2">Full-Stack</span>
+          <span class="hero-tech-sep">&bull;</span>
+          <span class="hero-tech-badge" data-i18n="hero-tech-3">Network Solutions</span>
+        </div>
+        <div class="hero-status">
+          <span class="status-indicator"></span>
+          <span class="status-text" data-i18n="hero-status">All systems operational &mdash; Ready for secure projects</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#terminal" class="btn btn-primary magnetic-btn">
+            <i class="fas fa-terminal"></i>
+            <span data-i18n="hero-btn-terminal">Enter Command Center</span>
+          </a>
+          <a href="#contact" class="btn btn-glass magnetic-btn">
+            <i class="fas fa-shield-halved"></i>
+            <span data-i18n="hero-btn-contact">Secure Contact</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMINAL -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="terminal-subtitle">// CYBER COMMAND CENTER</span>
+          <h2 class="section-title" data-i18n="terminal-title">Interactive Terminal</h2>
+          <p class="section-desc" data-i18n="terminal-desc">Execute commands to explore my technical capabilities.</p>
+        </div>
+        <div class="terminal-wrapper">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">root@hadi:~ &mdash; bash</span>
+            <button class="terminal-clear-btn" id="termClearBtn" title="Clear"><i class="fas fa-eraser"></i></button>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="terminal-output" id="terminalOutput">
+              <div class="line"><span class="cyan">╔══════════════════════════════════════════════════╗</span></div>
+              <div class="line"><span class="cyan">║</span>  <span class="green">WELCOME TO HADI'S CYBER COMMAND CENTER</span>  <span class="cyan">║</span></div>
+              <div class="line"><span class="cyan">╚══════════════════════════════════════════════════╝</span></div>
+              <div class="line"><span class="gray">Type </span><span class="green">help</span><span class="gray"> for available commands</span></div>
+              <br>
+            </div>
+            <div class="terminal-input-line">
+              <span class="prompt-root">root@hadi:~$</span>
+              <input type="text" class="terminal-input" id="terminalInput" autofocus spellcheck="false" autocomplete="off" aria-label="Terminal input">
+              <span class="cursor-block" id="termCursor"></span>
+            </div>
+          </div>
+        </div>
+        <div class="terminal-hints">
+          <span class="hint-label" data-i18n="terminal-available">Quick:</span>
+          <button class="cmd-hint" data-cmd="whoami">whoami</button>
+          <button class="cmd-hint" data-cmd="role">role</button>
+          <button class="cmd-hint" data-cmd="skills">skills</button>
+          <button class="cmd-hint" data-cmd="status">status</button>
+          <button class="cmd-hint" data-cmd="projects">projects</button>
+          <button class="cmd-hint" data-cmd="help">help</button>
+          <button class="cmd-hint" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="skills-subtitle">// SKILLS MATRIX</span>
+          <h2 class="section-title" data-i18n="skills-title">Professional Arsenal</h2>
+          <p class="section-desc" data-i18n="skills-desc">Core competencies across development, security, and infrastructure.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card card-spotlight">
+            <div class="skill-header"><div class="skill-icon"><i class="fab fa-html5"></i></div><h3 data-i18n="skills-frontend">Frontend</h3></div>
+            <div class="skill-items">
+              <div class="skill-item"><div class="skill-info"><span>HTML5</span><span class="skill-val">95%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>CSS3 / Tailwind</span><span class="skill-val">90%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span class="skill-val">85%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-card card-spotlight">
+            <div class="skill-header"><div class="skill-icon"><i class="fas fa-server"></i></div><h3 data-i18n="skills-backend">Backend</h3></div>
+            <div class="skill-items">
+              <div class="skill-item"><div class="skill-info"><span>PHP</span><span class="skill-val">90%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>Python</span><span class="skill-val">85%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>MySQL / Databases</span><span class="skill-val">88%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-card card-spotlight">
+            <div class="skill-header"><div class="skill-icon"><i class="fas fa-shield"></i></div><h3 data-i18n="skills-security">Cybersecurity</h3></div>
+            <div class="skill-items">
+              <div class="skill-item"><div class="skill-info"><span data-i18n="skill-sec-1">API Security & Pentesting</span><span class="skill-val">85%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span data-i18n="skill-sec-2">Vulnerability Assessment</span><span class="skill-val">80%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span data-i18n="skill-sec-3">Secure Code Development</span><span class="skill-val">85%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span data-i18n="skill-sec-4">Web App Security</span><span class="skill-val">82%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-card card-spotlight">
+            <div class="skill-header"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><h3 data-i18n="skills-networking">Networking</h3></div>
+            <div class="skill-items">
+              <div class="skill-item"><div class="skill-info"><span data-i18n="skill-net-1">MikroTik Systems & Scripting</span><span class="skill-val">85%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span data-i18n="skill-net-2">Hotspot & RADIUS</span><span class="skill-val">80%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span data-i18n="skill-net-3">Network Administration</span><span class="skill-val">82%</span></div><div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section stats-section" id="stats">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="stats-subtitle">// METRICS</span>
+          <h2 class="section-title" data-i18n="stats-title">Performance Statistics</h2>
+          <p class="section-desc" data-i18n="stats-desc">Quantifiable results and operational metrics.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card card-spotlight"><div class="stat-icon"><i class="fas fa-cubes"></i></div><div class="stat-number"><span class="counter" data-target="4">0</span></div><div class="stat-label" data-i18n="stat-1">Advanced Systems Fully Developed</div></div>
+          <div class="stat-card card-spotlight"><div class="stat-icon"><i class="fas fa-flask"></i></div><div class="stat-number"><span class="counter" data-target="10">0</span><span class="stat-plus">+</span></div><div class="stat-label" data-i18n="stat-2">Lab Projects & Independent Experiments</div></div>
+          <div class="stat-card card-spotlight"><div class="stat-icon"><i class="fas fa-clock"></i></div><div class="stat-number"><span class="counter" data-target="2">0</span><span class="stat-plus">+</span></div><div class="stat-label" data-i18n="stat-3">Years of Independent R&amp;D</div></div>
+          <div class="stat-card card-spotlight"><div class="stat-icon"><i class="fas fa-shield-halved"></i></div><div class="stat-number"><span class="counter" data-target="100">0</span><span class="stat-plus">%</span></div><div class="stat-label" data-i18n="stat-4">Absolute Data Security Focus</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARSENAL -->
+    <section class="section arsenal-section" id="arsenal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="arsenal-subtitle">// TECHNOLOGY ARSENAL</span>
+          <h2 class="section-title" data-i18n="arsenal-title">Tech Stack</h2>
+          <p class="section-desc" data-i18n="arsenal-desc">Tools and technologies I wield on a daily basis.</p>
+        </div>
+        <div class="arsenal-grid">
+          <div class="arsenal-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="arsenal-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="arsenal-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+          <div class="arsenal-item"><i class="fab fa-php"></i><span>PHP</span></div>
+          <div class="arsenal-item"><i class="fab fa-python"></i><span>Python</span></div>
+          <div class="arsenal-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+          <div class="arsenal-item"><i class="fab fa-linux"></i><span>Linux</span></div>
+          <div class="arsenal-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div class="arsenal-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+          <div class="arsenal-item"><i class="fas fa-wifi"></i><span>MikroTik</span></div>
+          <div class="arsenal-item"><i class="fas fa-plug"></i><span>WebSocket</span></div>
+          <div class="arsenal-item"><i class="fas fa-cloud"></i><span>REST API</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="projects-subtitle">// PROJECT SHOWCASE</span>
+          <h2 class="section-title" data-i18n="projects-title">Security-Engineered Solutions</h2>
+          <p class="section-desc" data-i18n="projects-desc">Each project is built with security-first principles and modern architecture.</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <div class="project-card card-spotlight" data-tilt>
+            <div class="project-banner">
+              <div class="project-banner-graphic"><div class="graphic-grid"></div><div class="graphic-icon"><i class="fas fa-shield-halved"></i></div></div>
+              <div class="project-banner-overlay"><span class="project-badge" data-i18n="proj-1-badge">Standalone Security Tool</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj-1-title">BOLA-Sniper &mdash; Advanced Vulnerability Scanner</h3>
+              <p class="project-desc" data-i18n="proj-1-desc">Comprehensive penetration testing platform to discover web and API vulnerabilities (BOLA/IDOR, XSS, SQLi, CSRF, SSRF) utilizing a background daemon engine.</p>
+              <div class="project-techs"><span>Python</span><span>PHP</span><span>Vanilla JS</span><span>MySQL</span><span>Celery</span><span>Redis</span></div>
+              <div class="project-details">
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="features-label">Key Features</span>
+                  <ul><li data-i18n="proj-1-f1">Automated scanning engine</li><li data-i18n="proj-1-f2">Premium PDF/HTML reports</li><li data-i18n="proj-1-f3">CI/CD integration support</li></ul>
+                </div>
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="security-label">Security Highlights</span>
+                  <ul><li data-i18n="proj-1-s1">Input sanitization pipeline</li><li data-i18n="proj-1-s2">SQLi protection via Prepared Statements</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="project-card card-spotlight" data-tilt>
+            <div class="project-banner">
+              <div class="project-banner-graphic"><div class="graphic-grid"></div><div class="graphic-icon"><i class="fas fa-route"></i></div></div>
+              <div class="project-banner-overlay"><span class="project-badge" data-i18n="proj-2-badge">Reconnaissance Tool</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj-2-title">CORTEX OS Path Scanner</h3>
+              <p class="project-desc" data-i18n="proj-2-desc">Advanced directory and virtual path scanner that maps web application structures efficiently without exhausting server memory.</p>
+              <div class="project-techs"><span>PHP</span><span>JavaScript</span><span>Curl_multi</span></div>
+              <div class="project-details">
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="features-label">Key Features</span>
+                  <ul><li data-i18n="proj-2-f1">2000 concurrent parallel requests</li><li data-i18n="proj-2-f2">Live progress bar</li><li data-i18n="proj-2-f3">Export results to .txt</li></ul>
+                </div>
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="security-label">Security Highlights</span>
+                  <ul><li data-i18n="proj-2-s1">Smart request timeout management</li><li data-i18n="proj-2-s2">Anti-redirect loop handling</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="project-card card-spotlight" data-tilt>
+            <div class="project-banner">
+              <div class="project-banner-graphic"><div class="graphic-grid"></div><div class="graphic-icon"><i class="fas fa-wifi"></i></div></div>
+              <div class="project-banner-overlay"><span class="project-badge" data-i18n="proj-3-badge">Network Infrastructure</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj-3-title">Atlantis Network v3 &mdash; Premium Hotspot</h3>
+              <p class="project-desc" data-i18n="proj-3-desc">Highly secure, premium responsive captive portal for MikroTik routers tailored for ISPs with an immersive dark glassmorphism layout.</p>
+              <div class="project-techs"><span>MikroTik</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <div class="project-details">
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="features-label">Key Features</span>
+                  <ul><li data-i18n="proj-3-f1">Voucher authentication system</li><li data-i18n="proj-3-f2">Session bandwidth profiles</li><li data-i18n="proj-3-f3">Full Walled Garden compatibility</li></ul>
+                </div>
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="security-label">Security Highlights</span>
+                  <ul><li data-i18n="proj-3-s1">Built-in anti-XSS protection</li><li data-i18n="proj-3-s2">DevTools blocking (anti-code theft)</li><li data-i18n="proj-3-s3">Encrypted RADIUS communication</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="project-card card-spotlight" data-tilt>
+            <div class="project-banner">
+              <div class="project-banner-graphic"><div class="graphic-grid"></div><div class="graphic-icon"><i class="fas fa-gamepad"></i></div></div>
+              <div class="project-banner-overlay"><span class="project-badge" data-i18n="proj-4-badge">Full-Stack Web Application</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj-4-title">Quiz Master Pro V2</h3>
+              <p class="project-desc" data-i18n="proj-4-desc">Real-time multiplayer interactive quiz application supporting 4 competitive game modes with a powerful administration panel.</p>
+              <div class="project-techs"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>WebSockets</span></div>
+              <div class="project-details">
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="features-label">Key Features</span>
+                  <ul><li data-i18n="proj-4-f1">Live game rooms</li><li data-i18n="proj-4-f2">Dynamic Leaderboards</li><li data-i18n="proj-4-f3">Role-Based Access Control (RBAC)</li></ul>
+                </div>
+                <div class="project-detail">
+                  <span class="detail-label" data-i18n="security-label">Security Highlights</span>
+                  <ul><li data-i18n="proj-4-s1">Secure session regeneration post-login</li><li data-i18n="proj-4-s2">CSRF-protected APIs to block answer tampering</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="section trust-section" id="trust">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="trust-subtitle">// TRUST & CREDENTIALS</span>
+          <h2 class="section-title" data-i18n="trust-title">Security Clearance</h2>
+          <p class="section-desc" data-i18n="trust-desc">Verified credentials and professional certifications.</p>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card card-spotlight">
+            <div class="trust-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3 class="trust-title" data-i18n="trust-1-title">Cybersecurity Student (2nd Year)</h3>
+            <p class="trust-desc" data-i18n="trust-1-desc">Academic focus on ethical hacking, code analysis, and infrastructure fortification.</p>
+          </div>
+          <div class="trust-card card-spotlight">
+            <div class="trust-icon"><i class="fas fa-code"></i></div>
+            <h3 class="trust-title" data-i18n="trust-2-title">Full-Stack Developer</h3>
+            <p class="trust-desc" data-i18n="trust-2-desc">Ability to build sleek frontends and connect them securely to scalable backend systems.</p>
+          </div>
+          <div class="trust-card card-spotlight">
+            <div class="trust-icon"><i class="fas fa-network-wired"></i></div>
+            <h3 class="trust-title" data-i18n="trust-3-title">MikroTik & Network Solutions Specialist</h3>
+            <p class="trust-desc" data-i18n="trust-3-desc">Practical experience engineering custom captive portals and managing secure local networks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="cta-wrapper">
+          <div class="cta-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="cta-badge">Secure Communication Channel</span>
+          </div>
+          <h2 class="cta-title" data-i18n="cta-title">Let's Build Something Exceptional Together.</h2>
+          <p class="cta-subtitle" data-i18n="cta-subtitle">Pricing is flexible and determined upon discussing your project requirements.</p>
+          <div class="cta-actions">
+            <a href="https://wa.me/967773865607" class="cta-btn-whatsapp magnetic-btn" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>
+              <span data-i18n="cta-btn-whatsapp">WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/najmx.cyber" class="cta-btn-instagram magnetic-btn" target="_blank" rel="noopener">
+              <i class="fab fa-instagram"></i>
+              <span data-i18n="cta-btn-instagram">Instagram</span>
+            </a>
+            <a href="https://www.youtube.com/@NajmX_Cyber" class="cta-btn-youtube magnetic-btn" target="_blank" rel="noopener">
+              <i class="fab fa-youtube"></i>
+              <span data-i18n="cta-btn-youtube">YouTube</span>
+            </a>
+          </div>
+          <p class="cta-meta" data-i18n="cta-meta">PGP Encryption Available &bull; Secure End-to-End &bull; Response within 24 Hours</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span data-i18n="footer-text">&copy; 2026 Hadi Ahmed Abdulrahman &bull; Built with secure engineering principles</span>
+        <div class="footer-links">
+          <a href="https://www.youtube.com/@NajmX_Cyber" class="footer-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="footer-youtube">YouTube</span></a>
+          <a href="https://instagram.com/najmx.cyber" class="footer-link" target="_blank"><i class="fab fa-instagram"></i> <span data-i18n="footer-instagram">Instagram</span></a>
+          <a href="#" class="footer-link"><i class="fab fa-github"></i> <span data-i18n="footer-github">GitHub</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
