@@ -911,3 +911,33 @@ body.lang-ar .arsenal-item { font-family: var(--font-arabic-body); }
   .section { padding: 40px 0; }
   .terminal-body { min-height: 180px; max-height: 300px; }
 }
+/* تنسيق الحاوية الرئيسية للبطاقات */
+.certs-grid {
+    display: flex;
+    flex-direction: row; /* لعرضها بجانب بعضها */
+    flex-wrap: wrap;     /* لضمان التجاوب على الشاشات الصغيرة */
+    justify-content: center;
+    gap: 2rem;           /* المسافة بين البطاقات */
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/* تنسيق البطاقة الزجاجية الثابت */
+.cert-card {
+    flex: 1;
+    min-width: 300px;    /* لضمان عدم صغر حجم البطاقة */
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.03); /* الخلفية الزجاجية الخفيفة */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    transition: all 0.4s ease;
+    text-align: center; /* لتوسط النصوص داخل البطاقة */
+}
+
+/* تأكيد ثبات التصميم عند تحويل الموقع للعربية RTL */
+[dir="rtl"] .certs-grid {
+    flex-direction: row-reverse; /* يضمن بقاء الترتيب صحيحاً من اليمين لليسار */
+}
