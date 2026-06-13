@@ -67,7 +67,7 @@ const i18n = {
   "proj-2-s1": { en: "Smart request timeout management", ar: "إدارة ذكية لمهلة الطلبات" },
   "proj-2-s2": { en: "Anti-redirect loop handling", ar: "معالجة حلقات إعادة التوجيه" },
   "proj-3-badge": { en: "Network Infrastructure", ar: "البنية التحتية والشبكات" },
-  "proj-3-title": { en: "Atlantis Network v3 &mdash; Premium Hotspot", ar: "شبكة أتلانتس v3 &mdash; قالب هوتسبوت بريميوم" },
+  "proj-3-title": { en: "MikroTik Network v3 &mdash; Premium Hotspot", ar: "  شبكة مايكروتيك &mdash; قالب هوتسبوت بريميوم" },
   "proj-3-desc": { en: "Highly secure, premium responsive captive portal for MikroTik routers tailored for ISPs with an immersive dark glassmorphism layout.", ar: "بوابة أسر آمنة وبريميوم لمايكروتيك مع تصميم زجاجي غامق لمزودي الإنترنت." },
   "proj-3-f1": { en: "Voucher authentication system", ar: "نظام توثيق بالقسائم" },
   "proj-3-f2": { en: "Session bandwidth profiles", ar: "ملفات عرض نطاق لكل جلسة" },
